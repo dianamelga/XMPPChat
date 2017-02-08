@@ -1,6 +1,7 @@
 package com.dianascode.xmppchat.Adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.dianascode.xmppchat.Activities.ChatContactActivity;
 import com.dianascode.xmppchat.Models.Contact;
 import com.dianascode.xmppchat.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -40,6 +43,16 @@ public class ContactRecyclerView extends RecyclerView.Adapter<ContactRecyclerVie
         Contact contact = contacts.get(position);
         holder.user_state_card.setText(contact.getState());
         holder.username_contact_card.setText(contact.getUsername());
+        Picasso.with(activity).load(contact.getImage()).into(holder.image_contact_card);
+
+        holder.image_contact_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity, ChatContactActivity.class);
+
+                activity.startActivity(intent);
+            }
+        });
 
 
     }
@@ -62,6 +75,7 @@ public class ContactRecyclerView extends RecyclerView.Adapter<ContactRecyclerVie
             image_contact_card = (ImageView) itemView.findViewById(R.id.picture_contact_cardview);
             username_contact_card = (TextView) itemView.findViewById(R.id.user_contact);
             user_state_card = (TextView) itemView.findViewById(R.id.user_contact_state);
+
 
         }
     }

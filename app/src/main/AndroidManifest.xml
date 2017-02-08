@@ -27,7 +27,8 @@
         <service android:name="services.Xmppservice"/>
         -->
         <activity android:name=".Activities.CreateAccountActivity" />
-        <activity android:name=".Activities.ChatActivity"></activity>
+        <activity android:name=".Activities.ChatActivity" />
+        <activity android:name=".Activities.ChatContactActivity"></activity>
     </application>
 
 </manifest>

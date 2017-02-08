@@ -24,4 +24,6 @@
     <string name="text_chastlist_time_last_msg">20:30</string>
     <string name="contacts">Contacts</string>
     <string name="chatlist">Chats</string>
+    <string name="text_name_contact_toolbar">Willians Ojeda</string>
+    <string name="text_message_chat_cv">El cuadrado del primer termino es igual al doble producto del primero por el segundo mas el cuadrado del segundo termino</string>
 </resources>

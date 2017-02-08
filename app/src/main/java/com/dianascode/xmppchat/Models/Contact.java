@@ -9,11 +9,20 @@ public class Contact {
     private String username;
     private String name;
     private String state;
+    private String image; /*preparamos para que reciba una url*/
 
     public Contact(String username, String name, String state) {
         this.username = username;
         this.name = name;
         this.state = state;
+    }
+
+    public Contact(String username, String name, String state, String image){
+        this.username = username;
+        this.name = name;
+        this.state = state;
+        this.image = image;
+
     }
 
     public String getState() {
@@ -38,5 +47,13 @@ public class Contact {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

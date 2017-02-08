@@ -27,14 +27,14 @@ public class ChatActivity extends AppCompatActivity {
         callFragment(chatListFragment);
 
         /* declaro mi bottom bar*/
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.menu_bottombar);
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
 
         /*que mi tab de contactos este seleccionado por default*/
 
         ContactsFragment contactsFragment = new ContactsFragment();
         callFragment(contactsFragment);
 
-    /*    bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -57,7 +57,7 @@ public class ChatActivity extends AppCompatActivity {
                 return false;
             }
         });
-        */
+
 
 
     }

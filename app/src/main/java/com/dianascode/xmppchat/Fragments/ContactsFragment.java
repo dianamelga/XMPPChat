@@ -73,18 +73,31 @@ public class ContactsFragment extends Fragment {
 
     public ArrayList<Contact> getContacts(){
         ArrayList<Contact> contacts = new ArrayList<>();
-        contacts.add(new Contact("diana","Diana Melgarejo","Available"));
-        contacts.add(new Contact("ivan","Ivan Melgarejo","Available"));
-        contacts.add(new Contact("luis","Diana Melgarejo","Available"));
-        contacts.add(new Contact("andrea","Ivan Melgarejo","Available"));
-        contacts.add(new Contact("cesar","Diana Melgarejo","Available"));
-        contacts.add(new Contact("edu","Ivan Melgarejo","Available"));
-        contacts.add(new Contact("mama","Diana Melgarejo","Available"));
-        contacts.add(new Contact("papa","Ivan Melgarejo","Available"));
-        contacts.add(new Contact("francisco","Diana Melgarejo","Available"));
-        contacts.add(new Contact("carlos","Ivan Melgarejo","Available"));
-        contacts.add(new Contact("elena","Diana Melgarejo","Available"));
-        contacts.add(new Contact("manu","Ivan Melgarejo","Available"));
+        String image1 = "http://icon-icons.com/icons2/689/PNG/512/android_robot_mobile_mood_emoji_icon-icons.com_61443.png";
+        String image2 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_smile_happy_successful_icon-icons.com_61431.png";
+        String image3 ="http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_happy_smile_successful_icon-icons.com_61441.png";
+        String image4 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_crash_bug_dead_icon-icons.com_61439.png";
+        String image5 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_happy_joke_tounge_icon-icons.com_61434.png";
+        String image6 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_sad_icon-icons.com_61440.png";
+        String image7 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_love_lovely_icon-icons.com_61435.png";
+        String image8 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_angry_upset_icon-icons.com_61442.png";
+        String image9 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_sad_tear_icon-icons.com_61433.png";
+        String image10 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_sad_crying_icon-icons.com_61436.png";
+        String image11 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_sleeping_tired_icon-icons.com_61438.png";
+        String image12 = "http://icon-icons.com/icons2/689/PNG/128/android_robot_mobile_mood_emoji_happy_smile_icon-icons.com_61437.png";
+
+        contacts.add(new Contact("diana","Diana Melgarejo","Available", image1));
+        contacts.add(new Contact("ivan","Ivan Melgarejo","Available",image2));
+        contacts.add(new Contact("luis","Diana Melgarejo","Available",image3));
+        contacts.add(new Contact("andrea","Ivan Melgarejo","Available",image4));
+        contacts.add(new Contact("cesar","Diana Melgarejo","Available",image5));
+        contacts.add(new Contact("edu","Ivan Melgarejo","Available",image6));
+        contacts.add(new Contact("mama","Diana Melgarejo","Available",image7));
+        contacts.add(new Contact("papa","Ivan Melgarejo","Available",image8));
+        contacts.add(new Contact("francisco","Diana Melgarejo","Available",image9));
+        contacts.add(new Contact("carlos","Ivan Melgarejo","Available",image10));
+        contacts.add(new Contact("elena","Diana Melgarejo","Available",image11));
+        contacts.add(new Contact("manu","Ivan Melgarejo","Available",image12));
 
 
         return contacts;

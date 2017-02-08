@@ -19,4 +19,11 @@
     <dimen name="margin_bottom_username_contact_cv">5dp</dimen>
     <dimen name="width_time_chatlist_last_msg">6dp</dimen>
     <dimen name="width_chatlist_last_msg">300dp</dimen>
+    <dimen name="width_image_contact_toolbar">50dp</dimen>
+    <dimen name="height_image_contact_toolbar">50dp</dimen>
+    <dimen name="padding_left_img_contact_toolbar">50dp</dimen>
+    <dimen name="margin_top_img_contact_toolbar">3dp</dimen>
+    <dimen name="width_name_contact_toolbar">100dp</dimen>
+    <dimen name="height_name_contact_toolbar">20dp</dimen>
+    <dimen name="width_message_cv">300dp</dimen>
 </resources>
